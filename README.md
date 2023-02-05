@@ -47,7 +47,7 @@ words here
 
 - Brooklyn Dressel
 
-## Sharing The Load:
+#### Sharing The Load:
 
 We plan to split the work evenly in all aspects of our projects creation, working together on pseudo-code and logic as well as the actual implementation of that logic as code.
 
