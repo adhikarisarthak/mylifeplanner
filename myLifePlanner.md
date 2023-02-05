@@ -4,7 +4,27 @@ My Life Planner is a diary management system that enables users to securely and 
 Users will be able to make, manage, and view entries using the system's user-friendly interface. Additionally, the system will include a search feature to make it easier for users to locate particular entries, searching by the entry name or date.
 
 ## Project Description
-words here
+### Introduction:
+
+### Objectives:
+
+### Methodology:
+
+### Timeline:
+- Week 1: 
+  - Get acquainted with the project's libraries and tools.
+- Week 2 to 4: 
+  - Create the user interface and put the functionality for managing and creating entries into place.
+- Week 5 to 6: 
+  - Implement the search and classification features between weeks five and six.
+- Week 7 to 8: 
+  - Implement the security and encryption features in weeks seven and eight.
+- Week 9 to 10: 
+  - Debugging and testing in weeks nine and ten.
+- Week 11: 
+  - Finishing touches and paperwork.
+
+### Conclusion:
 
 
 
