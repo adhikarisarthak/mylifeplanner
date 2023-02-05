@@ -10,6 +10,7 @@ words here
 
 # Layered Developement Schedule
 1. Functional Minimun:
+
 -Creating journals
 -Deleting journals
 2. Low Target:
