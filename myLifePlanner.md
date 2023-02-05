@@ -12,7 +12,7 @@ Users will be able to make, manage, and view entries using the system's user-fri
 - To offer a search option to assist users in finding certain entries.
 
 ### Methodology:
-__need words here__
+_need words here_
 
 ### Timeline:
 - Week 1: 
