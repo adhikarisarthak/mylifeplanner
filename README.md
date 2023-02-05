@@ -39,13 +39,15 @@ words here
 
 ## Team Members' Roles
 
-#### Meet the team:
+### Meet the team:
 
-   -Sarthak Adhikari
+- Sarthak Adhikari
 
-   -Triet Nguyen
+- Triet Nguyen
 
-   -Brooklyn Dressel
+- Brooklyn Dressel
+
+### Sharing The Load:
 
 We plan to split the work evenly in all aspects of our projects creation, working together on pseudo-code and logic as well as the actual implementation of that logic as code.
 
