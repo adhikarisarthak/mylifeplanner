@@ -14,6 +14,20 @@ Users will be able to make, manage, and view entries using the system's user-fri
 ### Methodology:
 _need words here_
 
+_the logic we plan to implement_
+
+_*************************************************
+*********Diary Management System*********
+*************************************************
+Methods:
+Add a new journal
+Open Previous Journal
+Search for a journal
+- _Date_
+- _Name_
+_Delete 
+*************************************************_
+
 ### Timeline:
 - Week 1: 
   - Get acquainted with the project's libraries and tools.
