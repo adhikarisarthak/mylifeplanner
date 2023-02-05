@@ -3,60 +3,58 @@ My Life Planner is a diary management system that enables users to securely and 
 
 Users will be able to make, manage, and view entries using the system's user-friendly interface. Additionally, the system will include a search feature to make it easier for users to locate particular entries, searching by the entry name or date.
 
-# Project Description
+## Project Description
 words here
 
 
 
-# Layered Developement Schedule
-1. Functional Minimun:
+## Layered Developement Schedule
+##### 1. Functional Minimun:
 
-      -Creating journals
+   -Creating journals
 
-      -Deleting journals
+   -Deleting journals
 
-2. Low Target:
+##### 2. Low Target:
 
-      -Viewing journals
+   -Viewing journals
 
-      -Editing journals
+   -Editing journals
 
-3. Desireable Target:
+##### 3. Desireable Target:
 
-      -Searching journals (by name or date)
+   -Searching journals (by name or date)
 
-4. High Target:
+#### 4. High Target:
 
-      -Good writing system
+- Good writing system
 
-      -Change fonts
+- Change fonts
 
-5. Extras:
+##### 5. Extras:
 
-     -Search by text in journal
+- Search by text in journal
 
 
 
-# Team Members' Roles
+## Team Members' Roles
 
-Meet the team:
+#### Meet the team:
 
    -Sarthak Adhikari
-   
+
    -Triet Nguyen
 
    -Brooklyn Dressel
-    
-
 
 We plan to split the work evenly in all aspects of our projects creation, working together on pseudo-code and logic as well as the actual implementation of that logic as code.
 
 
 
-# Assessment
+## Assessment
 
-Main Usage:
+#### Main Usage:
 
-Main Users:
+#### Main Users:
 
-Criteria For Success:
+#### Criteria For Success:
