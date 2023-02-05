@@ -7,6 +7,9 @@ Users will be able to make, manage, and view entries using the system's user-fri
 ### Introduction:
 
 ### Objectives:
+- To offer customers a safe and convenient platform on which to organize and preserve their private diary entries.
+- To enable users to sort entries according to various criteria.
+- To offer a search option to assist users in finding certain entries.
 
 ### Methodology:
 
