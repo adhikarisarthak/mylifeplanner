@@ -16,17 +16,17 @@ _need words here_
 
 _the logic we plan to implement_
 
-_*************************************************
-*********Diary Management System*********
+*************************************************
+********* Diary Management System *********
 *************************************************
 Methods:
-Add a new journal
-Open Previous Journal
-Search for a journal
-- _Date_
-- _Name_
-_Delete 
-*************************************************_
+- Add a new journal
+- Open Previous Journal
+- Search for a journal
+  - Date
+  - Name
+- Delete 
+*************************************************
 
 ### Timeline:
 - Week 1: 
