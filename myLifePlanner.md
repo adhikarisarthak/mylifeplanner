@@ -1,10 +1,10 @@
 # My Life Planner
-My Life Planner is a diary management system that enables users to securely and logically store and manage their private ideas, experiences, and events.
-
-Users will be able to make, manage, and view entries using the system's user-friendly interface. Additionally, the system will include a search feature to make it easier for users to locate particular entries, searching by the entry name or date.
 
 ## Project Description
 ### Introduction:
+My Life Planner is a diary management system that enables users to securely and logically store and manage their private ideas, experiences, and events.
+
+Users will be able to make, manage, and view entries using the system's user-friendly interface. Additionally, the system will include a search feature to make it easier for users to locate particular entries, searching by the entry name or date.
 
 ### Objectives:
 - To offer customers a safe and convenient platform on which to organize and preserve their private diary entries.
