@@ -9,21 +9,21 @@ words here
 
 
 ## Layered Developement Schedule
-##### 1. Functional Minimun:
+#### 1. Functional Minimun:
 
-   -Creating journals
+- Creating journals
 
-   -Deleting journals
+- Deleting journals
 
-##### 2. Low Target:
+#### 2. Low Target:
 
-   -Viewing journals
+- Viewing journals
 
-   -Editing journals
+- Editing journals
 
-##### 3. Desireable Target:
+#### 3. Desireable Target:
 
-   -Searching journals (by name or date)
+- Searching journals (by name or date)
 
 #### 4. High Target:
 
@@ -31,7 +31,7 @@ words here
 
 - Change fonts
 
-##### 5. Extras:
+#### 5. Extras:
 
 - Search by text in journal
 
