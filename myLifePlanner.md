@@ -57,6 +57,12 @@ We plan to split the work evenly in all aspects of our projects creation, workin
 
 ### Main Usage:
 
+This **?** would be used in order to write everyday journals or perhaps even to take notes.
+
 ### Main Users:
 
+The main users of this **?** would be the average consumer, regular people for private use.
+
 ### Criteria For Success:
+
+This **?** would be considered a success if **...**
