@@ -12,6 +12,7 @@ Users will be able to make, manage, and view entries using the system's user-fri
 - To offer a search option to assist users in finding certain entries.
 
 ### Methodology:
+__need words here__
 
 ### Timeline:
 - Week 1: 
@@ -72,10 +73,11 @@ Users will be able to make, manage, and view entries using the system's user-fri
 
 - Brooklyn Dressel
 
-### Sharing The Load:
+### Meeting Plan:
+Our group will meet one to two times a week via discord call.  The time will vary week to week depending on our schedules.
 
+### Work Distribution:
 We plan to split the work evenly in all aspects of our projects creation, working together on pseudo-code and logic as well as the actual implementation of that logic as code.
-
 
 
 ## Assessment
