@@ -28,7 +28,9 @@ Users will be able to make, manage, and view entries using the system's user-fri
   - Finishing touches and paperwork.
 
 ### Conclusion:
-
+- MyDiary is a helpful application for users who wish to securely and efficiently manage the entries in their personal diaries. 
+- Users' personal information will be secured by the system's user-friendly design, strong features, and rigorous security. 
+- The project will provide a top-notch and useful diary management system, and completion is anticipated in 11 weeks.
 
 
 ## Layered Developement Schedule
