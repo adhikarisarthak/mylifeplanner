@@ -98,12 +98,22 @@ We plan to split the work evenly in all aspects of our projects creation, workin
 
 ### Main Usage:
 
-This **?** would be used in order to write everyday journals or perhaps even to take notes.
+The main usage of a diary management system would be to provide a platform for individuals to write and manage their personal diary. It would allow users to record their daily events, thoughts, and experiences in a private and secure environment. The system would provide features such as date-wise categorization, text formatting, and search functionality to make it easy for users to access and review their diary entries. Additionally, the system may also offer features such as password protection, backup and restore options, and customization options to enhance the user experience. The overall goal of a diary management system would be to make it simple and convenient for individuals to keep a record of their personal lives.
 
 ### Main Users:
 
-The main users of this **?** would be the average consumer, regular people for private use.
+A diary management system would primarily be used by those who wanted to keep a log of their daily activities, ideas, and experiences. Students, professionals, authors, and anybody else who wishes to keep a secret, private journal might all be among these users.
 
 ### Criteria For Success:
 
-This **?** would be considered a success if **...**
+1. User-friendly interface: The system should be easy to use and intuitive, allowing users to quickly and easily input and access their diary entries.
+
+2. Well-organized data: The system should provide an efficient and effective way to categorize and store diary entries, making it simple for users to retrieve and review their information.
+
+3. Customization options: The system should offer customization options to allow users to personalize the look and feel of their diary, such as font and color options.
+
+4. Search functionality: The system should provide a fast and accurate search feature to allow users to quickly find specific diary entries.
+
+5. Reliability: The system should be stable and dependable, ensuring that users can access their diary entries without interruption.
+
+6. Additional features: The system should offer additional features that enhance the diary-keeping experience, such as the ability to insert images and videos, password protection.
