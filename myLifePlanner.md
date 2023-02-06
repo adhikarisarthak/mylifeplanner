@@ -98,7 +98,7 @@ We plan to split the work evenly in all aspects of our projects creation, workin
 
 ### Main Usage:
 
-The main usage of a diary management system would be to provide a platform for individuals to write and manage their personal diary. It would allow users to record their daily events, thoughts, and experiences in a private and secure environment. The system would provide features such as date-wise categorization, text formatting, and search functionality to make it easy for users to access and review their diary entries. Additionally, the system may also offer features such as password protection, backup and restore options, and customization options to enhance the user experience. The overall goal of a diary management system would be to make it simple and convenient for individuals to keep a record of their personal lives.
+The main usage of a diary management system would be to provide a platform for individuals to write and manage their personal diary. It would allow users to record their daily events, thoughts, and experiences in a private and secure environment. The system would provide features such as search functionality to make it easy for users to access and review their diary entries. Additionally, the system may also offer features such as password protection. The overall goal of a diary management system would be to make it simple and convenient for individuals to keep a record of their personal lives.
 
 ### Main Users:
 
