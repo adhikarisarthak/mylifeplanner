@@ -13,7 +13,12 @@ Users will be able to make, manage, and view entries using the system's user-fri
 
 ### Methodology:
 _need words here_
-
+- Using stack to build entry journal as in a database
+- Each Journal will be give a unique ID and a timestamp of creation
+- Password protection will be optional at creation time or further in future
+- If password is requested then we will have keyword generation by user choice and using PIV checking system to check on keyword entry everytime.
+- Journal unique ID can be searched using Binary Tree search algorithm
+- Among deletion unique ID of all items will not be changed or reorganized
 _the logic we plan to implement_
 
 *************************************************
@@ -98,7 +103,7 @@ We plan to split the work evenly in all aspects of our projects creation, workin
 
 ### Main Usage:
 
-The main usage of a diary management system would be to provide a platform for individuals to write and manage their personal diary. It would allow users to record their daily events, thoughts, and experiences in a private and secure environment. The system would provide features such as search functionality to make it easy for users to access and review their diary entries. Additionally, the system may also offer features such as password protection. The overall goal of a diary management system would be to make it simple and convenient for individuals to keep a record of their personal lives.
+The main usage of a diary management system would be to provide a platform for individuals to write and manage their personal diary. It would allow users to record their daily events, thoughts, and experiences in a private and secure environment. The system would provide features such as date-wise categorization, text formatting, and search functionality to make it easy for users to access and review their diary entries. Additionally, the system may also offer features such as password protection, backup and restore options, and customization options to enhance the user experience. The overall goal of a diary management system would be to make it simple and convenient for individuals to keep a record of their personal lives.
 
 ### Main Users:
 
