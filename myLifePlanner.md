@@ -142,7 +142,7 @@ Version 0 Beta 1:
   + Manual Login and Manual Sign Up
 
 Version 0 Beta 1.1:
--Fixes:
+- Fixes:
   + Added manual entry for username and password
   + Switching from using map to vector to save journals correctly
   + Journal is now displaying all entries
