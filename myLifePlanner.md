@@ -146,7 +146,7 @@ Version 0 Beta 1.1:
   + Added manual entry for username and password
   + Switching from using map to vector to save journals correctly
   + Journal is now displaying all entries
-  + Able to load JSON and Print it
+  + Able to Save/load entries as JSON and Print it ( while the username of saved JSON and logged in account are matching)
   + Move Print function as hard code from main.cpp to journal.h
-  + Fixed first screen with limited options
-  + After login you will have your entries load up
+  + Fixed first prompt with limited option of only logging in
+  + After login you will have your entries load up in the background
