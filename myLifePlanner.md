@@ -150,3 +150,7 @@ Version 0 Beta 1.1:
   + Move Print function as hard code from main.cpp to journal.h
   + Fixed first prompt with limited option of only logging in
   + After login you will have your entries load up in the background
+
+Version 0 Beta 1.1.1:
+- Updates:
+  + Added new Developer: Sarthak Adhikari (bv9292)
