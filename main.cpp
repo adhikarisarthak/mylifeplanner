@@ -21,7 +21,7 @@ int main() {
         }
         else {
             cout << "Login CI:\n"
-                    "1. Login\n"
+                    "1. Login (Disabled)\n"
                     "2. Print\n"
                     "3. Add new journal\n"
                     "4. Sign Out\n";
@@ -52,13 +52,11 @@ int main() {
             studentJournal.printJournal();
         }
 
-
         else if (LoginOptions == 3) {
             studentJournal.JournalEntry();
             studentJournal.createNewJournal(loginUsername, studentJournal.journalID, studentJournal.journalData);
             studentJournal.saveAsJson(studentJournal.journal);
         }
-
 
         else{
             cout << "Sign Out of App completed";

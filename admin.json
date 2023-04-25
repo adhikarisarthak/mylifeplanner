@@ -1,22 +1,8 @@
 [
     {
         "journal": {
-            "Entry": "Ge",
+            "Entry": "Testing version 0 beta 1.2.1 of the project. Building checking if the json exist, if not then continue instead of breaking the program",
             "ID": 1
-        },
-        "username": "admin"
-    },
-    {
-        "journal": {
-            "Entry": "Ge",
-            "ID": 1
-        },
-        "username": "admin"
-    },
-    {
-        "journal": {
-            "Entry": "sdfasdf",
-            "ID": 2
         },
         "username": "admin"
     }

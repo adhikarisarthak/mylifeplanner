@@ -64,19 +64,22 @@ public:
     void loadJSONEntries(string username)
     {
         string jsonFileName = username+".json";
-        ifstream ifs(jsonFileName);
-        json j;
-        ifs >> j;
-        string loadedUsername = j[0]["username"];
-        if(username == loadedUsername){
-            cout << "loading user entries" <<  endl;
-            vector<pair<string, pair<int, string>>> loadingJournal;
-            for (const auto& element : j) {
-                string loaded_username = element["username"];
-                int loaded_ID = element["journal"]["ID"];
-                string loaded_entry = element["journal"]["Entry"];
-                journal.emplace_back(loaded_username, make_pair(loaded_ID,loaded_entry));
-                cout << "loading entry" << " " << loaded_ID<< endl;
+        if(filesystem::exists(jsonFileName)){
+            ifstream ifs(jsonFileName);
+            json j;
+            ifs >> j;
+            string loadedUsername = j[0]["username"];
+            if(username == loadedUsername){
+                cout << "loading previous entries" <<  endl;
+                vector<pair<string, pair<int, string>>> loadingJournal;
+                for (const auto& element : j) {
+                    string loaded_username = element["username"];
+                    int loaded_ID = element["journal"]["ID"];
+                    string loaded_entry = element["journal"]["Entry"];
+                    journal.emplace_back(loaded_username, make_pair(loaded_ID,loaded_entry));
+                    // cout << "loading entry" << " " << loaded_ID<< endl; Debug line
+                }
+                cout << "... Completed" << endl;
             }
         }
     }
