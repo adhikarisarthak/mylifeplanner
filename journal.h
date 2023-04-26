@@ -1,14 +1,9 @@
-//
-// Created by Triet Nguyen on 3/20/23.
-//
-
-#ifndef JOURNALPROJECT_JOURNAL_H
-#define JOURNALPROJECT_JOURNAL_H
-
-#endif //JOURNALPROJECT_JOURNAL_H
 #include <ctime>
+#include <tuple>
 #include <iostream>
 #include <fstream>
+#include <sstream>
+#include <filesystem>
 #include <vector>
 #include <utility>
 #include <string>
@@ -16,68 +11,90 @@
 
 using namespace std;
 using json =  nlohmann::json;
-class JournalDetails{
+
+class JournalDetails {
 public:
-    int journalID;
-    string journalData;
-    vector<pair<string,pair<int,string>>> journal;
-    json journalJSONData;
-    void JournalEntry(){
+    int journal_id;
+    string current_time;
+    string journal_data;
+    vector<tuple<string, string, pair<int, string>>> journal;
+    json journal_json_data;
+
+    void journal_entry() {
+        cout << "Please enter what you want to write today: ";
         cin.ignore();
-        cout << "Create new Journal\n Please enter Journal ID: ";
-        cin >> journalID;
-        cout << "Please enter what you want to write today:";
-        cin.ignore();
-        getline (cin, journalData);
-    }
-    void createNewJournal(string username, int journalID, string journalData)
-    {
-        journal.emplace_back(username, make_pair(journalID,journalData));
+        getline(cin, journal_data);
     }
 
-    void printJournal()
-    {
-        for (auto &data: journal) {
-            cout << data.first << " "
-                 << data.second.first << " "
-                 << data.second.second << "\n";
+    void create_new_journal(string username, string journal_data) {
+        json data;
+        time_t rawtime;
+        struct tm *timeinfo;
+        char buffer[80];
+
+        time(&rawtime);
+        timeinfo = localtime(&rawtime);
+
+        strftime(buffer, sizeof(buffer), "%d-%m-%Y %H:%M:%S", timeinfo);
+        string current_time = buffer;
+
+        if (journal.size() != 0) {
+            journal_id = get<2>(journal.front()).first + 1;
+        } else {
+            journal_id = 1;
+        }
+        journal.insert(journal.begin(), make_tuple(username, current_time, make_pair(journal_id, journal_data)));
+    }
+
+    void print_journal() {
+        cin.ignore();
+        for (const auto& data : journal) {
+            cout << "Username: " << get<0>(data) << " | "
+                 << "Timestamp: " << get<1>(data) << " | "
+                 << "Entry ID: " << get<2>(data).first << " | "
+                 << "Entry: " << get<2>(data).second << "\n";
         }
     }
 
-    void saveAsJson(vector<pair<string, pair<int,string>>> savingJournal){
-        for (const auto& element : savingJournal) {
-            journalJSONData.push_back({
-                {"username", element.first},
-                {"journal",
-                    {
-                        {"ID", element.second.first},
-                        {"Entry", element.second.second}
-                    }
-                }
-            });
+    void save_as_json(vector<tuple<string, string, pair<int, string>>> saving_journal) {
+        string json_file_name = get<0>(saving_journal[0]) + ".json";
+        filesystem::path path = "my_file.json";
+
+        // Check if the file exists
+        if (filesystem::exists(json_file_name))
+            filesystem::remove(json_file_name);
+            // The file does not exist
+        cout << "The file does not exist." << endl;
+        for (const auto &element: saving_journal) {
+            journal_json_data.push_back({
+                                                {"username", get<0>(element)},
+                                                {"journal",  {
+                                                                     {"timestamp", get<1>(element)},
+                                                                     {"id", get<2>(element).first},
+                                                                     {"entry", get<2>(element).second}
+                                                             }}
+                                        });
         }
-        string fileName = savingJournal[0].first + ".json";
-        ofstream jsonFile(fileName,std::ios::trunc);
-        jsonFile << setw(4) << journalJSONData << endl;
+        ofstream json_file(json_file_name, ios::app);
+        json_file << setw(4) << journal_json_data << endl;
     }
 
-    void loadJSONEntries(string username)
-    {
-        string jsonFileName = username+".json";
-        if(filesystem::exists(jsonFileName)){
-            ifstream ifs(jsonFileName);
+    void load_json_entries(string username) {
+        string json_file_name = username + ".json";
+        if (filesystem::exists(json_file_name)) {
+            ifstream ifs(json_file_name);
             json j;
             ifs >> j;
-            string loadedUsername = j[0]["username"];
-            if(username == loadedUsername){
-                cout << "loading previous entries" <<  endl;
-                vector<pair<string, pair<int, string>>> loadingJournal;
+            string loaded_username = j[0]["username"];
+            if (username == loaded_username) {
+                cout << "loading previous entries" << endl;
+                vector<pair<string, pair<int, string>>> loading_journal;
                 for (const auto& element : j) {
                     string loaded_username = element["username"];
-                    int loaded_ID = element["journal"]["ID"];
-                    string loaded_entry = element["journal"]["Entry"];
-                    journal.emplace_back(loaded_username, make_pair(loaded_ID,loaded_entry));
-                    // cout << "loading entry" << " " << loaded_ID<< endl; Debug line
+                    string loaded_timestamp = element["journal"]["timestamp"];
+                    int loaded_id = element["journal"]["id"];
+                    string loaded_entry = element["journal"]["entry"];
+                    journal.emplace_back(loaded_username, loaded_timestamp, make_pair(loaded_id, loaded_entry));
                 }
                 cout << "... Completed" << endl;
             }
