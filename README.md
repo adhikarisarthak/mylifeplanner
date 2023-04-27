@@ -52,7 +52,7 @@
   + Fixed first screen with limited option with just logging in
   + After logging in you will have your entries load up in the background
   
-# Version 0 Beta 1.2.1:
+## Version 0 Beta 1.2.1:
 - Fixes:
   + Testing version 0 beta 1.2.1 of the project. Building checking if the json exist, if
     not then continue instead of breaking the program
@@ -61,7 +61,7 @@
   + Automatic add in timestamp of creation date
   + Add the timestamp in JSON
 
-# Version 0 Beta 1.2.2:
+## Version 0 Beta 1.2.2:
 - Fixes:
   + Automatic Generate ID and Assign for each journal of each user
   + Automatic add in timestamp of creation date
@@ -70,3 +70,9 @@
   + Add remove function
   + Make sure when remove, the entries is not removed entirely, but everything on it will be blank
   + Fix up Print with the remove so that non-blank entries are displaying 
+
+## Version 0 Beta 1.2.3:
+- Fixes:
+  + Added remove function
+  + When removed, entry became blank instead of completely remove. This is in order to hold the integrity of JSON structure
+  + Print now print non-blank entries for users
