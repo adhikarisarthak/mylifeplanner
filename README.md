@@ -76,3 +76,11 @@
   + Added remove function
   + When removed, entry became blank instead of completely remove. This is in order to hold the integrity of JSON structure
   + Print now print non-blank entries for users
+
+## Version 1.0 Beta
+- Features:
+  + Account Creation
+  + Daily Journal Creation
+  + Remove by Journal ID
+  + Print as see fit
+  + File Save as Json only when logged out ( For security )
