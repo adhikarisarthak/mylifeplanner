@@ -17,10 +17,14 @@ public:
     void create_account(string username, string password);
     void save_as_json();
     void load_users_json();
+    string encrypt(string str);
+    string decrypt(string str);
     // Create a entries for username and password
     // Store them in json file
     // When login, check the the entries with existing database inside json file
     // pull the data store on the variables
+    // function to encrypt strings, used for password protection
+    // function to decrypt strings, used for password verification
 };
 
 bool LoginClass::user_login(string username, string password) {
@@ -30,7 +34,7 @@ bool LoginClass::user_login(string username, string password) {
     ifs >> users_temp;
 
     for (auto user: users_temp["users"]) {
-        if (username == user["username"] && password == user["password"]) {
+        if (username == user["username"] && password == decrypt(user["password"])) {
             return true;
         } else {
             return false;
@@ -50,4 +54,20 @@ void LoginClass::save_as_json() {
     }
     ofstream json_file("users.json", ios::app);
     json_file << setw(4) << users_json << endl;
+}
+
+string encrypt(string str)
+{
+    for (int i = 0; (i < 100 && str[i] != '\0'); i++)
+        str[i] = str[i] + 2; //the key for encryption is 3 that is added to ASCII value
+
+    return str;
+}
+
+string decrypt(string str)
+{
+    for (int i = 0; (i < 100 && str[i] != '\0'); i++)
+        str[i] = str[i] - 2; //the key for encryption is 3 that is subtracted to ASCII value
+
+    return str;
 }
