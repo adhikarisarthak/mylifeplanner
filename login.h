@@ -28,19 +28,18 @@ public:
 };
 
 bool LoginClass::user_login(string username, string password) {
-    // cout << username << password;
     ifstream ifs("users.json");
     nlohmann::json users_temp;
     ifs >> users_temp;
 
-    for (auto user: users_temp["users"]) {
+    for (auto user : users_temp["users"]) {
         if (username == user["username"] && password == decrypt(user["password"])) {
             return true;
-        } else {
-            return false;
         }
     }
+    return false;
 }
+
 void LoginClass::create_account(string username, string password) {
     users.push_back(make_pair(username,password));
 
@@ -56,22 +55,16 @@ void LoginClass::save_as_json() {
     json_file << setw(4) << users_json << endl;
 }
 
-string encrypt(string str)
-{
-    for (int i = 0; (i < 100 && str[i] != '\0'); i++)
-        str[i] = str[i] + 2; //the key for encryption is 3 that is added to ASCII value
-
-    string s(str);
-
-    return s;
+string encrypt(string str) {
+    for (int i = 0; i < str.length(); i++) {
+        str[i] = str[i] + 2; //the key for encryption is 2 that is added to ASCII value
+    }
+    return str;
 }
 
-string decrypt(string str)
-{
-    for (int i = 0; (i < 100 && str[i] != '\0'); i++)
-        str[i] = str[i] - 2; //the key for encryption is 3 that is subtracted to ASCII value
-
-    string s(str);
-
-    return s;
+string LoginClass::decrypt(string str) {
+    for (int i = 0; (i < str.length()); i++) {
+        str[i] = str[i] - 2; //the key for decryption is 2 that is subtracted from ASCII value
+    }
+    return str;
 }
