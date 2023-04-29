@@ -33,6 +33,20 @@ bool LoginClass::user_login(string username, string password) {
     nlohmann::json users_temp;
     ifs >> users_temp;
 
+string encrypt(string str) {
+    for (int i = 0; i < str.length(); i++) {
+        str[i] = str[i] + 2; //the key for encryption is 2 that is added to ASCII value
+    }
+    return str;
+}
+
+string LoginClass::decrypt(string str) {
+    for (int i = 0; (i < str.length()); i++) {
+        str[i] = str[i] - 2; //the key for decryption is 2 that is subtracted from ASCII value
+    }
+    return str;
+}    
+
     for (auto user: users_temp["users"]) {
         if (username == user["username"] && password == decrypt(user["password"])) {
             return true;
