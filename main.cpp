@@ -54,7 +54,7 @@ int main() {
                 cin >> login_username;
                 cout << "Please Enter your desired password: ";
                 cin >> login_password;
-                student_a.create_account(login_username,login_password);
+                student_a.create_account(login_username, encrypt(login_password));
                 student_a.save_as_json();
                 break;
             }
