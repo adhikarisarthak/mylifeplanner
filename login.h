@@ -69,5 +69,7 @@ string decrypt(string str)
     for (int i = 0; (i < 100 && str[i] != '\0'); i++)
         str[i] = str[i] - 2; //the key for encryption is 3 that is subtracted to ASCII value
 
-    return str;
+    string s(str);
+
+    return s;
 }
