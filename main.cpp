@@ -1,8 +1,3 @@
-//Brooklyn Dressel (fm6391),
-//Sarthak Adhikari(bv9292),
-//Triet Nguyen(re2653)
-
-
 #include <iostream>
 #include "login.h"
 #include "journal.h"
